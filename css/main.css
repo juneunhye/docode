@@ -1,12 +1,101 @@
 @charset "utf-8";
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-ul, li{
-    list-style: none;
+ul,
+li {
+  list-style: none;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
+  color: #333;
+}
+.inner {
+  position: relative;
+  width: 1180px;
+  margin: auto;
+}
+/* 상단 */
+header {
+  width: 100%;
+}
+header .inner {
+  height: 120px;
+}
+.header-top {
+  height: 60px;
+}
+.util {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  padding-top: 20px;
+}
+.util > li > a {
+  font: 13px/1 "arial";
+}
+/* 상단 아래 */
+.header-bt {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+}
+#gnb {
+  display: flex;
+  width: 800px;
+  text-align: center;
+  justify-content: space-between;
+}
+#gnb > li {
+  width: calc(100% / 5);
+}
+#gnb > li > a {
+  width: 100%;
+  line-height: 70px;
+  display: block;
+  font-weight: bold;
+}
+#gnb > li > a:hover {
+  background-color: #726e6e;
+  color: aliceblue;
+}
+/* 비주얼 */
+figure {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 120px);
+  background-color: #333;
+  padding-top: 250px;
+}
+figure video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  opacity: 0.3;
+}
+figure .inner h2 {
+  display: block;
+  font: 120px/1 "arial";
+  color: aliceblue;
+  margin-bottom: 20px;
+}
+figure .inner p {
+  font: 13px;
+  color: #838181;
+  margin-bottom: 60px;
+}
+figure .inner a {
+  display: block;
+  text-align: center;
+  width: 400px;
+  border: 1px solid #bbb;
+  font: bold 12px/30px "arial";
+  color: #fff;
 }
